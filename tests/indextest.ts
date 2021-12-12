@@ -7,3 +7,8 @@ test("addValues works",()=>{
   expect(instance.getValues()).toEqual(["bar"]);
 });
 
+test("addObjs works", ()=>{
+  const instance = new FooClass();
+  instance.addObj({name:"bar"});
+  expect(instance.getObjs()).toEqual([{name:"baz"}]);
+})
